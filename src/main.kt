@@ -5,9 +5,12 @@ fun main(){
     var b =Person("Molly",24,1.7,60)
     var c =Person("Josphine",21,1.5,45)
     var persons=mutableListOf<Person>(a,b,c)
-    persons.addAll(listOf())
     var sorted = persons.sortedByDescending { ag->ag.age }
     println(sorted)
+    var addedPersons= Person("Jane",25,1.9,79)
+    var addedPerson2=Person("Fiona",24,1.66,60)
+    var add3 = listOf(addedPersons,addedPerson2)
+    println(persons.plus(add3))
     var g = Car("KZE 616J", 200)
     var h = Car("KBU 907H", 100)
     var i = Car("KDG 107R", 300)
